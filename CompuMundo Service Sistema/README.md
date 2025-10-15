@@ -96,5 +96,6 @@ A través de este trabajo se integraron conocimientos de **frontend, backend, ba
 **Dilan Aguilar Dudik**  
 Estudiante de *Generación T* Año: 2025  
 
-**Lionel Alegre** 
+**Lionel Alegre**  
 Estudiante de *Generación T* Año: 2025
+
