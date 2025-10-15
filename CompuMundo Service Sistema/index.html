@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>CompuMundo Service — Turnos</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <header class="top">
+    <h1>CompuMundo — Service</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Turno</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="card">
+      <h2>Solicitar turno</h2>
+      <form id="formTurno" class="form">
+        <label>Nombre y apellido *</label>
+        <input name="nombre" required>
+
+        <label>Teléfono *</label>
+        <input name="telefono" required>
+
+        <label>Email</label>
+        <input type="email" name="email">
+
+        <label>Dispositivo *</label>
+        <select name="dispositivo" required>
+          <option value="">Seleccionar…</option>
+          <option>Notebook</option>
+          <option>Celular</option>
+          <option>Tablet</option>
+        </select>
+
+        <label>Descripción del problema *</label>
+        <textarea name="descripcion" required></textarea>
+
+        <label>Prioridad *</label>
+        <select name="prioridad" required>
+          <option>Baja</option><option>Media</option><option>Alta</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+        <p id="msg" style="color:#0d47a1;display:none;margin-top:8px;"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="assets/app.js"></script>
+  <script>
+    // Cambiá esta URL por la de tu backend (PythonAnywhere, etc.)
+    window.API_URL = 'http://localhost:8000'; 
+  </script>
+</body>
+</html>
